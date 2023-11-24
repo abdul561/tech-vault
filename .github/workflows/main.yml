@@ -16,7 +16,7 @@ jobs:
 
     - name: Run Tests
       run: |
-        pip install -r requirements.txt
+        pip install -r tech-vault/devops-challenges/code/q16/requirements.txt
         python -m unittest tests/test_app.py
 
     - name: Build Docker Image
