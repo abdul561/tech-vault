@@ -15,7 +15,7 @@ jobs:
         python-version: '3.10'  
 
     - name: Change working directory
-      run: cd tech-vault/devops-challenges/code/q16
+      run: cd devops-challenges/code/q16
 
     - name: Install dependencies
       run: pip install -r requirements.txt
