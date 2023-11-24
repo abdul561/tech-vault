@@ -14,9 +14,14 @@ jobs:
       with:
         python-version: '3.10'  
 
+    - name: Change working directory
+      run: cd tech-vault/devops-challenges/code/q16
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
     - name: Run Tests
       run: |
-        pip install -r tech-vault/devops-challenges/code/q16/requirements.txt
         python -m unittest tests/test_app.py
 
     - name: Build Docker Image
